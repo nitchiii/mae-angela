@@ -9,7 +9,11 @@ console.log(filter);
 const Header = () => {
   return (<div>
     {data.map((data, key)=> (
-        <li key={key}>{data.profession}</li>
+        <div key={key}>
+            <li> {data.profession}</li>
+            <li> {data.name}</li>
+            <li> {data.age}</li>
+        </div>
 
     ))}
     </div>
